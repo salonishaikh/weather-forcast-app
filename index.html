@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Added 'defer' to ensure script loads after HTML -->
+</head>
+<body>
+    <div class="weather-app">
+        <header class="header">
+            <h1>WEATHER FORECAST</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Search for a city...">
+                <button id="search-btn">Search</button>
+                <button class="current-location-btn">Current Location</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Recently Searched Cities</button>
+                <div id="dropdown-menu" class="dropdown-content"></div>
+            </div>
+        </header>
+
+        <div class="weather-today">
+            <h3 id="current-date">15 JULY</h3>
+            <div class="main-weather-info">
+                <div class="icon-weather">
+                    <img id="weather-icon" src="img/pngwing.com.png">
+                </div>
+                <div class="weather-details">
+                    <div class="temperature" id="temperature">24°C</div>
+                    <div class="other-info">
+                        <p id="weather-description">Cloudy</p>
+                        <p id="humidity">Humidity: 80%</p>
+                        <p id="wind-speed">Wind: 10 km/h</p>
+                        <p id="country">Country: India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-heading">
+            <h3>5-Day Forecast</h3>
+        </div>
+
+        <div class="forecast-container">
+            <div class="forecast-day">
+                <p>Tuesday</p>
+                <p>22°C</p>
+                <p>Humidity: 70%</p>
+                <p>Wind: 5 km/h</p>
+                <img src=" C:\Users\good day\Desktop\weather-forcast-app\img\cloudy.png" alt="Cloudy">
+                <p>20 Sep</p>
+            </div>
+            <div class="forecast-day">
+                <p>Wednesday</p>
+                <p>20°C</p>
+                <p>Humidity: 75%</p>
+                <p>Wind: 6 km/h</p>
+                <img src="C:\Users\good day\Desktop\weather-forcast-app\img\rainy.png" alt="Rainy">
+                <p>21 Sep</p>
+            </div>
+            <div class="forecast-day">
+                <p>Thursday</p>
+                <p>18°C</p>
+                <p>Humidity: 80%</p>
+                <p>Wind: 7 km/h</p>
+                <img src="C:\Users\good day\Desktop\weather-forcast-app\img\stormy.png" alt="Stormy">
+                <p>22 Sep</p>
+            </div>
+            <div class="forecast-day">
+                <p>Friday</p>
+                <p>23°C</p>
+                <p>Humidity: 65%</p>
+                <p>Wind: 8 km/h</p>
+                <img src="C:\Users\good day\Desktop\weather-forcast-app\img\sunny.png" alt="Sunny">
+                <p>23 Sep</p>
+            </div>
+            <div class="forecast-day">
+                <p>Saturday</p>
+                <p>21°C</p>
+                <p>Humidity: 68%</p>
+                <p>Wind: 4 km/h</p>
+                <img src="C:\Users\good day\Desktop\weather-forcast-app\img\cloudy.png" alt="Cloudy">
+                <p>24 Sep</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

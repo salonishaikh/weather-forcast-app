@@ -1,0 +1,257 @@
+ /* Global Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Light blue background */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width for larger screens */
+    background-color: #66c7f2; /* Background color */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%; /* Adjust width as needed */
+}
+
+.search-container .current-location-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Button color */
+    color: #007bff; /* Button text color */
+    cursor: pointer;
+}
+#search-btn {
+    padding: 10px 15px;
+    background-color: #FFD700;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+    
+}
+.header .current-location-btn {
+    padding: 5px 10px; /* Small padding for a more compact button */
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease; 
+    margin-left: 10px; 
+    font-size: 12px; /* Adjust font size for a smaller button */
+}
+
+#search-btn:hover {
+    background-color:  white;
+    color: rgb(99, 198, 237);
+}
+.current-location-btn:hover {
+    background-color: rgb(150, 237, 156);
+    color: black;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top:10px;
+    margin-right: 170px;
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.weather-today h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.main-weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon-weather img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition for scaling and opacity */
+}
+
+/* Hover effect for the weather icon */
+.icon-weather img:hover {
+    transform: scale(1.1); /* Scale the icon up slightly on hover */
+    opacity: 0.8; /* Slightly fade the icon on hover */
+}
+
+.weather-details {
+    margin-left: 10px;
+}
+
+.temperature {
+    font-size: 48px;
+    color: #fff;
+}
+
+.other-info {
+    color: #fff;
+    font-size: 14px;
+}
+
+.forecast-heading h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    background-color: #fff; /* Background color for each card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    width: 90px; /* Fixed width for the cards */
+    text-align: center; /* Center text alignment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scale and shadow */
+}
+.forecast-day:nth-child(1) {
+    background-color: #b3f5d4; /* Light red for Monday */
+}
+
+.forecast-day:nth-child(2) {
+    background-color: #95c3e4; /* Light blue for Tuesday */
+}
+
+.forecast-day:nth-child(3) {
+    background-color: #ebb2fc; /* Light green for Wednesday */
+}
+
+.forecast-day:nth-child(4) {
+    background-color: rgb(245, 213, 154); /* Light yellow for Thursday */
+}
+
+.forecast-day:nth-child(5) {
+    background-color: #89e5ee; /* Light green for Friday */
+}
+.forecast-day:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.forecast-day p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.forecast-day img {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-day p:last-child {
+    font-size: 10px;
+    color: #777;
+}
+/* For Desktop */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem; /* Larger font size for desktops */
+    }
+
+    .flex-item {
+        flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+    }
+}
+
+/* For iPad Mini */
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2.5rem; /* Slightly smaller font for iPad */
+    }
+
+    .flex-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+/* For iPhone SE */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem; /* Smaller font for iPhone */
+    }
+
+    .flex-item {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+}
